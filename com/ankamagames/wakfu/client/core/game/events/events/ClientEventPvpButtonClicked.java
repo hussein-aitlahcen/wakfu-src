@@ -1,0 +1,27 @@
+package com.ankamagames.wakfu.client.core.game.events.events;
+
+import com.ankamagames.framework.external.*;
+
+public final class ClientEventPvpButtonClicked implements ClientGameEvent
+{
+    public static final ParameterListSet PARAMETERS_LIST_SET;
+    
+    @Override
+    public int getId() {
+        return ClientGameEventProtocol.PVP_BUTTON_CLICKED.getId();
+    }
+    
+    @Override
+    public String[] getProperties() {
+        return ClientEventPvpButtonClicked.NO_PROPERTIES;
+    }
+    
+    @Override
+    public ParameterListSet getParametersListSet() {
+        return ClientEventPvpButtonClicked.PARAMETERS_LIST_SET;
+    }
+    
+    static {
+        PARAMETERS_LIST_SET = new ClientGameEventParameterListSet(new ParameterList[] { new ClientGameEventParameterList("standard", new Parameter[0]) });
+    }
+}

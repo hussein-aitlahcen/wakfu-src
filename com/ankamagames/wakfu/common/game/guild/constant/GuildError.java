@@ -1,0 +1,17 @@
+package com.ankamagames.wakfu.common.game.guild.constant;
+
+public enum GuildError
+{
+    NO_ERROR, 
+    GUILD_CREATION_NAME_INVALID, 
+    GUILD_CREATION_ERROR, 
+    ALREADY_IN_GUILD, 
+    NAME_ALREADY_EXIST, 
+    BLAZON_ALREADY_EXIST, 
+    INVITED_NOT_FOUND, 
+    INVITED_IN_GUILD, 
+    INVITED_ALREADY_REQUESTED, 
+    DOESNT_HAVE_CREATION_FEE, 
+    DOESNT_HAVE_CREATION_ITEM, 
+    SOUL_AVATAR_CANT_BE_INVITED;
+}
